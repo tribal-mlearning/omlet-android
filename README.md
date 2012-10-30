@@ -4,7 +4,7 @@ This repository contains the source code for the OMLET exemplar Android applicat
 
 ## Documentation
 
-Visit http://omlet.m-learning.net/docs to view the full documeation.
+Visit http://omlet.m-learning.net/docs to view the full documentation.
 
 ## Building
 
