@@ -1,0 +1,46 @@
+
+CREATE TABLE IF NOT EXISTS settings (
+    _id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId TEXT,
+    key TEXT,
+    value TEXT,
+    objectId TEXT
+);
+
+CREATE TABLE IF NOT EXISTS tracking (
+    _id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId TEXT NOT NULL,
+    objectId TEXT NOT NULL,
+    sender TEXT NOT NULL,
+    deviceTimestamp DATETIME NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+    addInfo TEXT NULL
+);
+
+CREATE TABLE IF NOT EXISTS mylibrary (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	name TEXT NOT NULL,
+	organization TEXT NOT NULL,
+	fileUrl TEXT NOT NULL,
+	imagePath TEXT,
+	description TEXT,
+	published_date DATETIME NOT NULL,
+	localFolder TEXT,
+	courseCode TEXT,
+	version TEXT,
+	download_date DATETIME,
+	uniqueId TEXT NOT NULL,
+	md5sum TEXT,
+	state TEXT
+);
+
+CREATE TABLE IF NOT EXISTS log (
+	_id INTEGER PRIMARY KEY NOT NULL,
+	datetime DATETIME NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+	entry TEXT NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS news (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	newsItem TEXT NOT NULL
+);

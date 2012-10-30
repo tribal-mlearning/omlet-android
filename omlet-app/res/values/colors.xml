@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright (c) 2012, TATRC and Tribal
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+ 	modification, are permitted provided that the following conditions are met:
+	  * Redistributions of source code must retain the above copyright
+		notice, this list of conditions and the following disclaimer.
+ 	  * Redistributions in binary form must reproduce the above copyright
+ 		notice, this list of conditions and the following disclaimer in the
+ 		documentation and/or other materials provided with the distribution.
+ 	  * Neither the name of TATRC or TRIBAL nor the
+ 		names of its contributors may be used to endorse or promote products
+ 		derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ 	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ 	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ 	DISCLAIMED. IN NO EVENT SHALL TATRC OR TRIBAL BE LIABLE FOR ANY
+ 	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ 	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ 	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ 	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<resources>
+
+    <color name="overlay_background">#BF272727</color>
+    <color name="login_entry_no_connection_background">#FFFFFFFF</color>
+    <color name="home_button_overlay_colour">#969B9B9B</color>
+    <color name="header_divider">#FFD4D4D4</color>
+    <color name="dialog_overlay_background">#DE6E6E6E</color>
+    <color name="list_item_divider">#FFE4E4E4</color>
+    <color name="blue_text_colour">#FF191C50</color>
+    <color name="line_light_brush">#FF4382A3</color>
+    <color name="line_dark_brush">#FF101839</color>
+    <color name="tab_background">#E0E0E0</color>
+    <color name="tab_text_color">#3D3D3D</color>
+    <color name="tab_divider_color">#939393</color>
+    <color name="app_background_color">#F1F1F1</color>
+    <color name="white">#FFFFFF</color>
+	<color name="selected_blue">#FFB4D1DB</color>
+	<color name="light_blue">#FF428CA5</color>
+</resources>

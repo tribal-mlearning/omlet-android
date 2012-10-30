@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tribal.omlet"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:name=".OmletApplication"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Omlet.Blue" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:name=".MainTabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PhoneGapActivity"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name=".PackageListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ListMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PackageDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PackageCatalogueActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PackageLibraryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PackageStoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NewsFeedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DownloadManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+			android:theme="@style/PreferencesTheme">
+        </activity>
+        <activity
+            android:name=".LogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayDialogTheme" />
+        <activity
+            android:name="com.tribal.mobile.checklist.NativeAddItemDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DimmerFloatingOverlayDialogTheme" />
+        <activity
+            android:name="com.tribal.mobile.checklist.NativeInfoDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DimmerFloatingOverlayDialogTheme" />
+
+        <service android:name=".download.DownloadServiceImplementation" >
+        </service>
+        <service android:name=".sync.SyncService" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright (c) 2012, TATRC and Tribal
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+ 	modification, are permitted provided that the following conditions are met:
+	  * Redistributions of source code must retain the above copyright
+		notice, this list of conditions and the following disclaimer.
+ 	  * Redistributions in binary form must reproduce the above copyright
+ 		notice, this list of conditions and the following disclaimer in the
+ 		documentation and/or other materials provided with the distribution.
+ 	  * Neither the name of TATRC or TRIBAL nor the
+ 		names of its contributors may be used to endorse or promote products
+ 		derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ 	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ 	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ 	DISCLAIMED. IN NO EVENT SHALL TATRC OR TRIBAL BE LIABLE FOR ANY
+ 	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ 	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ 	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ 	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<resources>
+
+    <style name="CustomTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/app_background_color</item>
+        <item name="android:colorBackground">@color/app_background_color</item>
+    </style>
+
+    <style name="Theme.Omlet.Blue" parent="@style/Theme.Sherlock.Light.ForceOverflow">
+        <item name="actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionModeStyle">@style/MyActionModeStyle</item>
+        <item name="actionModeCloseDrawable">@drawable/selected</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="android:actionModeStyle">@style/MyActionModeStyle</item>
+        <item name="android:actionModeCloseDrawable">@drawable/selected</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_item_background</item>
+        <item name="dropDownListViewStyle">@style/MyDropDownStyle</item>
+        <item name="android:dropDownListViewStyle">@style/MyDropDownStyle</item>
+        <item name="android:listViewStyle">@style/Omlet.Widget.ListView</item>
+       	<item name="android:preferenceStyle">@style/Omlet.Widget.ListView</item>  
+    </style>
+
+    <style name="MyActionBarTabStyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/blue_background</item>
+        <item name="background">@drawable/blue_background</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+    </style>
+
+    <style name="MyDropDownStyle" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/actionbar_item_background</item>
+        <item name="android:divider">@drawable/abs__list_divider_holo_light</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyActionModeStyle" parent="@style/Widget.Sherlock.Light.ActionMode">
+        <item name="android:background">@drawable/action_mode_background</item>
+        <item name="background">@drawable/action_mode_background</item>
+    </style>
+
+    <style name="Omlet.Widget.ListView" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/blue_list_selector</item>
+    </style>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright (c) 2012, TATRC and Tribal
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+ 	modification, are permitted provided that the following conditions are met:
+	  * Redistributions of source code must retain the above copyright
+		notice, this list of conditions and the following disclaimer.
+ 	  * Redistributions in binary form must reproduce the above copyright
+ 		notice, this list of conditions and the following disclaimer in the
+ 		documentation and/or other materials provided with the distribution.
+ 	  * Neither the name of TATRC or TRIBAL nor the
+ 		names of its contributors may be used to endorse or promote products
+ 		derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ 	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ 	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ 	DISCLAIMED. IN NO EVENT SHALL TATRC OR TRIBAL BE LIABLE FOR ANY
+ 	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ 	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ 	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ 	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<resources>
+
+    <string name="get_my_library_sql">SELECT _id, name, organization, fileUrl, imagePath, description, localFolder, courseCode, published_date, version, download_date, uniqueId, md5sum, state FROM mylibrary ORDER BY name ASC</string>
+    <string name="library_column_id">_id</string>
+    <string name="library_column_name">name</string>
+    <string name="library_column_org">organization</string>
+    <string name="library_column_fileUrl">fileUrl</string>
+    <string name="library_column_imagePath">imagePath</string>
+    <string name="library_column_description">description</string>
+    <string name="library_column_published_date">published_date</string>
+    <string name="library_column_folder">localFolder</string>
+    <string name="library_column_course_code">courseCode</string>
+    <string name="library_column_md5sum">md5sum</string>
+    <string name="library_column_version">version</string>
+    <string name="library_column_uniqueId">uniqueId</string>
+    <string name="library_column_download_date">download_date</string>
+    <string name="library_column_state">state</string>
+    <string name="delete_library_entry_where_clause_sql">localFolder = ?</string>
+    <string name="get_my_library_single_item_sql">SELECT _id, name, organization, fileUrl, imagePath, description, localFolder, courseCode, published_date, version, download_date, uniqueId, md5sum, state FROM mylibrary WHERE name = ?</string>
+    <string name="get_tracking_entries_sql">SELECT _id, objectId, sender, strftime(\'%s\', deviceTimestamp) as deviceTimestamp, addInfo FROM tracking WHERE userId = ? ORDER BY deviceTimestamp ASC</string>
+    <string name="delete_tracking_entry_where_clause_sql">_id = ?</string>
+	<string name="objectIdSqlQueryPlaceholder">[objectId]</string>
+	<string name="userIdSqlQueryPlaceholder">[userId]</string>
+	<string name="delete_setting_objectId_userId_sql">DELETE FROM settings WHERE objectId LIKE \'[objectId].%\' AND userId = \'[userId]\'</string>
+	<string name="delete_setting_userId_sql">DELETE FROM settings WHERE userId = \'[userId]\'</string>
+	<string name="library_status_updating">updating</string>
+	<string name="delete_local_storage_setting_objectId_userId_sql">DELETE FROM settings WHERE key LIKE \'__[ls]_%\' AND objectId LIKE \'[objectId]\' AND userId = \'[userId]\'</string>
+    
+</resources>

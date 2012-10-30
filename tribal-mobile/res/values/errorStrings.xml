@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright (c) 2012, TATRC and Tribal
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+ 	modification, are permitted provided that the following conditions are met:
+	  * Redistributions of source code must retain the above copyright
+		notice, this list of conditions and the following disclaimer.
+ 	  * Redistributions in binary form must reproduce the above copyright
+ 		notice, this list of conditions and the following disclaimer in the
+ 		documentation and/or other materials provided with the distribution.
+ 	  * Neither the name of TATRC or TRIBAL nor the
+ 		names of its contributors may be used to endorse or promote products
+ 		derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ 	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ 	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ 	DISCLAIMED. IN NO EVENT SHALL TATRC OR TRIBAL BE LIABLE FOR ANY
+ 	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ 	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ 	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ 	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<resources>
+
+    <string name="downloadErrorTitle">Download Error</string>
+    <string name="connectionErrorTitle">Connection Error</string>
+    <string name="unzipErrorTitle">Unzipping Error</string>
+    <string name="packageErrorTitle">Course Error</string>
+    <string name="packageParseError">Cannot parse package xml</string>
+    <string name="packageFindXmlError">Cannot find package xml</string>
+    <string name="packageEntryPointError">Entry point %s cannot be found</string>
+    <string name="packageUnzipError">Cannot open course zip file</string>
+    <string name="packageNoMenuError">No menu or HTML resource specified in package xml</string>
+    <string name="packageDownloadError">Unable to download course</string>
+    <string name="packageConnectionError">Unable to connect to the network</string>
+    <string name="packageNoEntryPoint">No entry point found in package xml</string>
+    <string name="packageListConnectionError">Unable to connect to the course list service</string>
+    <string name="loggingErrorTitle">Logging Error</string>
+    <string name="logCreationError">Error creating log file</string>
+    <string name="downloadWarningTitle">Download Warning</string>
+    <string name="sdCardFullError">There is not enough space on the device to download this file.</string>
+    <string name="download3GWarning">The course is over 5MB and will be downloaded over 3G.</string>
+    <string name="downloadWifiWarning">The course is over 10MB and will be downloaded over WiFi.</string>
+    <string name="downloadExceedsSizeWarning">The course is over the recommended size (50MB).</string>
+    <string name="sslSelfSignedCertificateErrorTitle">SSL certificate not trusted</string>
+    <string name="sslSelfSignedCertificateErrorMessage">This application is attempting to connect to a server that does not have a trusted SSL certificate. If you wish to connect anyway, please change the \'Self-signed SSL certs.\' setting in Settings.</string>
+
+</resources>
